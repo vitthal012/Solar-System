@@ -1,4 +1,15 @@
-body{
-    color:black;
-    background-color:black;
+html, body, #root {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #f8fafc;
+  background-color: #050816;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+button {
+  font: inherit;
 }
