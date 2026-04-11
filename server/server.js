@@ -17,9 +17,9 @@ async function start(){
             res.json({"hello":"vitthal"});
         });
 
-        app.get('/components',async (req,res)=>{
-            let collect =await db.collection('components').find().toArray();
-            res.json(collect[0]);
+        app.get('/planets',async (req,res)=>{
+            let collect =await db.collection('Planets').find().toArray();
+            res.json(collect[0].planets);
         });
 
         app.listen(process.env.PORT||8000,()=>{

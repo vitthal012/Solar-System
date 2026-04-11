@@ -9,11 +9,10 @@ function App() {
   useEffect(()=>{
     fetch(ev.VITE_BACKEND_URL).then(res=>res.json()).then(d=>setdata(d));
   },[]);
-  console.log(data);
 
     return(
     <>
-    <CBE/>
+    <CBE data={data}/>
     </>
   );
 }

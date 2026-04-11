@@ -19,7 +19,7 @@ async function connectClus() {
     await client.connect();
     console.log(`connected successfully`);
 
-    db=client.db('laptopbuddy');
+    db=client.db('solar_system');
     console.log(`connected to the database`);
   }catch(e){
     console.log(`error in mongodb: `,e.message);
